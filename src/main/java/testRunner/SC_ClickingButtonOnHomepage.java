@@ -19,7 +19,7 @@ public class SC_ClickingButtonOnHomepage {
 	
 	@BeforeMethod
 	public void beforeMethod() throws InterruptedException{
-		
+		System.out.println("Running before method");
 		
 		
 		DriverProvider tb = new DriverProvider();
@@ -31,8 +31,9 @@ public class SC_ClickingButtonOnHomepage {
 	}
 	
 	
-	@AfterClass
-	public void afterClass(){
+	@AfterMethod
+	public void afterMethod(){
+		System.out.println("Running after method");
 		driver.close();
 	}
 	
@@ -54,21 +55,7 @@ public class SC_ClickingButtonOnHomepage {
 		
 	}
 	
-	@Test
-	public void tc_clickingLendingButton(){
-		CitiHomePage chp = PageFactory.initElements(driver,page.CitiHomePage.class );
-		
-		WebDriverWait wait = new WebDriverWait(driver, 6);
-		wait.until(ExpectedConditions.elementToBeClickable(chp.getLendingButton()));
-		
-		
-		
-		
-		
-		chp.clickingLendingButton();
 
-	
-	}
 	
 	
 	

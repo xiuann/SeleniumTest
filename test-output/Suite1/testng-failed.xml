@@ -6,8 +6,8 @@
       <class name="testRunner.SC_ClickingButtonOnHomepage">
         <methods>
           <include name="afterMethod"/>
+          <include name="tc_clickingLendingButton"/>
           <include name="beforeMethod"/>
-          <include name="tc_clickingBankingButton"/>
         </methods>
       </class> <!-- testRunner.SC_ClickingButtonOnHomepage -->
     </classes>
