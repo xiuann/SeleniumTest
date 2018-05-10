@@ -2,38 +2,42 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="14218" started-at="2018-05-09T15:10:54Z" finished-at="2018-05-09T15:11:08Z">
+  <suite name="Suite1" duration-ms="22642" started-at="2018-05-10T20:24:24Z" finished-at="2018-05-10T20:24:46Z">
     <groups>
+      <group name="SeleniumEasy">
+        <method signature="TC_SingleInputField.tc_SingleInputField()[pri:0, instance:testRunner.TC_SingleInputField@548a9f61]" name="tc_SingleInputField" class="testRunner.TC_SingleInputField"/>
+        <method signature="TC_TwoInputField.tc_twoInputFields()[pri:0, instance:testRunner.TC_TwoInputField@6d00a15d]" name="tc_twoInputFields" class="testRunner.TC_TwoInputField"/>
+      </group> <!-- SeleniumEasy -->
     </groups>
-    <test name="Regression Testing" duration-ms="14218" started-at="2018-05-09T15:10:54Z" finished-at="2018-05-09T15:11:08Z">
-      <class name="testRunner.SC_ClickingButtonOnHomepage">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testRunner.SC_ClickingButtonOnHomepage@36d4b5c]" name="beforeMethod" is-config="true" duration-ms="7984" started-at="2018-05-09T11:10:54Z" finished-at="2018-05-09T11:11:02Z">
+    <test name="Selenium Easy" duration-ms="22642" started-at="2018-05-10T20:24:24Z" finished-at="2018-05-10T20:24:46Z">
+      <class name="testRunner.TC_TwoInputField">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testRunner.TC_TwoInputField@6d00a15d]" name="beforeMethod" is-config="true" duration-ms="14275" started-at="2018-05-10T16:24:24Z" finished-at="2018-05-10T16:24:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="tc_clickingBankingButton()[pri:0, instance:testRunner.SC_ClickingButtonOnHomepage@36d4b5c]" name="tc_clickingBankingButton" duration-ms="4106" started-at="2018-05-09T11:11:02Z" finished-at="2018-05-09T11:11:06Z">
+        <test-method status="PASS" signature="tc_twoInputFields()[pri:0, instance:testRunner.TC_TwoInputField@6d00a15d]" name="tc_twoInputFields" duration-ms="505" started-at="2018-05-10T16:24:38Z" finished-at="2018-05-10T16:24:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_clickingBankingButton -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testRunner.SC_ClickingButtonOnHomepage@36d4b5c]" name="afterMethod" is-config="true" duration-ms="2095" started-at="2018-05-09T11:11:06Z" finished-at="2018-05-09T11:11:08Z">
+        </test-method> <!-- tc_twoInputFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testRunner.TC_TwoInputField@6d00a15d]" name="afterMethod" is-config="true" duration-ms="130" started-at="2018-05-10T16:24:38Z" finished-at="2018-05-10T16:24:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testRunner.SC_ClickingButtonOnHomepage -->
-      <class name="testRunner.SC_ClickingLendingHomeButton">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testRunner.SC_ClickingLendingHomeButton@4f933fd1]" name="beforeMethod" is-config="true" duration-ms="7667" started-at="2018-05-09T11:10:54Z" finished-at="2018-05-09T11:11:02Z">
+      </class> <!-- testRunner.TC_TwoInputField -->
+      <class name="testRunner.TC_SingleInputField">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testRunner.TC_SingleInputField@548a9f61]" name="beforeMethod" is-config="true" duration-ms="22005" started-at="2018-05-10T16:24:24Z" finished-at="2018-05-10T16:24:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="tc_clickingLendingButton()[pri:0, instance:testRunner.SC_ClickingLendingHomeButton@4f933fd1]" name="tc_clickingLendingButton" duration-ms="351" started-at="2018-05-09T11:11:02Z" finished-at="2018-05-09T11:11:02Z">
+        <test-method status="PASS" signature="tc_SingleInputField()[pri:0, instance:testRunner.TC_SingleInputField@548a9f61]" name="tc_SingleInputField" duration-ms="472" started-at="2018-05-10T16:24:46Z" finished-at="2018-05-10T16:24:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_clickingLendingButton -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testRunner.SC_ClickingLendingHomeButton@4f933fd1]" name="afterMethod" is-config="true" duration-ms="534" started-at="2018-05-09T11:11:02Z" finished-at="2018-05-09T11:11:02Z">
+        </test-method> <!-- tc_SingleInputField -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testRunner.TC_SingleInputField@548a9f61]" name="afterMethod" is-config="true" duration-ms="148" started-at="2018-05-10T16:24:46Z" finished-at="2018-05-10T16:24:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testRunner.SC_ClickingLendingHomeButton -->
-    </test> <!-- Regression Testing -->
+      </class> <!-- testRunner.TC_SingleInputField -->
+    </test> <!-- Selenium Easy -->
   </suite> <!-- Suite1 -->
 </testng-results>

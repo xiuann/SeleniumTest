@@ -3,13 +3,27 @@
 <suite name="Suite1" parallel = "classes" >
  
  
- 
+ <!-- 
   <test name="Regression Testing" >
     <classes>
        <class name="testRunner.SC_ClickingButtonOnHomepage"/>
         <class name="testRunner.SC_ClickingLendingHomeButton"/>
        
     </classes>
+   </test> -->
+    
+    <test name= "Selenium Easy">
+    
+   <classes>
+   
+   <class name="testRunner.TC_SingleInputField"></class>
+   <class name="testRunner.TC_TwoInputField"></class>
+   
+   </classes>
+    
+    
+    
+  
  
     
   
