@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite1]" parallel="methods">
-  <test name="Regression Testing(failed)" parallel="methods">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testRunner.SC_ClickingButtonOnHomepage">
+      <class name="testRunner.TC_TwoInputField">
         <methods>
           <include name="afterMethod"/>
-          <include name="tc_clickingLendingButton"/>
+          <include name="tc_twoInputFields"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testRunner.SC_ClickingButtonOnHomepage -->
+      </class> <!-- testRunner.TC_TwoInputField -->
     </classes>
-  </test> <!-- Regression Testing(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

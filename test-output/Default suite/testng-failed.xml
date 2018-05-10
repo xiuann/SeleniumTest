@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testRunner.SC_ClickingButtonOnHomepage">
+      <class name="testRunner.TC_TwoInputField">
         <methods>
           <include name="afterMethod"/>
-          <include name="tc_clickingLendingButton"/>
+          <include name="tc_twoInputFields"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testRunner.SC_ClickingButtonOnHomepage -->
+      </class> <!-- testRunner.TC_TwoInputField -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
