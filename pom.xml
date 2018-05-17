@@ -33,8 +33,10 @@
     <artifactId>maven-compiler-plugin</artifactId>
     <version>3.7.0</version>
     <configuration>
-       
+        <source>1.8</source>
+        <target>1.8</target>
         <verbose>true</verbose>
+       
     </configuration>
 </plugin>
         </plugins>
@@ -51,7 +53,7 @@
   <groupId>org.testng</groupId>
   <artifactId>testng</artifactId>
   <version>6.8</version>
-  <scope>test</scope>
+  <scope>compile</scope>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
