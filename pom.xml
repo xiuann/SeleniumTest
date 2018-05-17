@@ -33,7 +33,7 @@
     <artifactId>maven-compiler-plugin</artifactId>
     <version>3.7.0</version>
     <configuration>
-        <release>8</release>
+       
         <verbose>true</verbose>
     </configuration>
 </plugin>
@@ -61,8 +61,20 @@
     <version>3.11.0</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>1.2.5</version>
+</dependency>
 
-
+<!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>2.12.2</version>
+    <scope>provided</scope>
+</dependency>
 
 
 

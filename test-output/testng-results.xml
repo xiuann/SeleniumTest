@@ -1,43 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="22642" started-at="2018-05-10T20:24:24Z" finished-at="2018-05-10T20:24:46Z">
+  <suite name="Default suite" duration-ms="21760" started-at="2018-05-16T21:25:43Z" finished-at="2018-05-16T21:26:05Z">
     <groups>
       <group name="SeleniumEasy">
-        <method signature="TC_SingleInputField.tc_SingleInputField()[pri:0, instance:testRunner.TC_SingleInputField@548a9f61]" name="tc_SingleInputField" class="testRunner.TC_SingleInputField"/>
-        <method signature="TC_TwoInputField.tc_twoInputFields()[pri:0, instance:testRunner.TC_TwoInputField@6d00a15d]" name="tc_twoInputFields" class="testRunner.TC_TwoInputField"/>
+        <method signature="TC_CheckBox1.tc_MultipleCheckBox_Checked()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="tc_MultipleCheckBox_Checked" class="testRunner.TC_CheckBox1"/>
+        <method signature="TC_CheckBox1.tc_MultipleCheckBox_Unchecked()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="tc_MultipleCheckBox_Unchecked" class="testRunner.TC_CheckBox1"/>
+        <method signature="TC_CheckBox1.tc_singleCheckBox()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="tc_singleCheckBox" class="testRunner.TC_CheckBox1"/>
       </group> <!-- SeleniumEasy -->
     </groups>
-    <test name="Selenium Easy" duration-ms="22642" started-at="2018-05-10T20:24:24Z" finished-at="2018-05-10T20:24:46Z">
-      <class name="testRunner.TC_TwoInputField">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testRunner.TC_TwoInputField@6d00a15d]" name="beforeMethod" is-config="true" duration-ms="14275" started-at="2018-05-10T16:24:24Z" finished-at="2018-05-10T16:24:38Z">
+    <test name="Default test" duration-ms="21760" started-at="2018-05-16T21:25:43Z" finished-at="2018-05-16T21:26:05Z">
+      <class name="testRunner.TC_CheckBox1">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="beforeMethod" is-config="true" duration-ms="8845" started-at="2018-05-16T17:25:43Z" finished-at="2018-05-16T17:25:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="tc_twoInputFields()[pri:0, instance:testRunner.TC_TwoInputField@6d00a15d]" name="tc_twoInputFields" duration-ms="505" started-at="2018-05-10T16:24:38Z" finished-at="2018-05-10T16:24:38Z">
+        <test-method status="PASS" signature="tc_MultipleCheckBox_Checked()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="tc_MultipleCheckBox_Checked" duration-ms="1016" started-at="2018-05-16T17:25:52Z" description="Test_To_Check_MultipleCheckBox_AllChecked" finished-at="2018-05-16T17:25:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_twoInputFields -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testRunner.TC_TwoInputField@6d00a15d]" name="afterMethod" is-config="true" duration-ms="130" started-at="2018-05-10T16:24:38Z" finished-at="2018-05-10T16:24:38Z">
+        </test-method> <!-- tc_MultipleCheckBox_Checked -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="afterMethod" is-config="true" duration-ms="266" started-at="2018-05-16T17:25:53Z" finished-at="2018-05-16T17:25:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testRunner.TC_TwoInputField -->
-      <class name="testRunner.TC_SingleInputField">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testRunner.TC_SingleInputField@548a9f61]" name="beforeMethod" is-config="true" duration-ms="22005" started-at="2018-05-10T16:24:24Z" finished-at="2018-05-10T16:24:46Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="beforeMethod" is-config="true" duration-ms="4694" started-at="2018-05-16T17:25:54Z" finished-at="2018-05-16T17:25:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="tc_SingleInputField()[pri:0, instance:testRunner.TC_SingleInputField@548a9f61]" name="tc_SingleInputField" duration-ms="472" started-at="2018-05-10T16:24:46Z" finished-at="2018-05-10T16:24:46Z">
+        <test-method status="PASS" signature="tc_MultipleCheckBox_Unchecked()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="tc_MultipleCheckBox_Unchecked" duration-ms="895" started-at="2018-05-16T17:25:58Z" description="Test_To_Check_MultipleCheckBox_UnChecked" finished-at="2018-05-16T17:25:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_SingleInputField -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testRunner.TC_SingleInputField@548a9f61]" name="afterMethod" is-config="true" duration-ms="148" started-at="2018-05-10T16:24:46Z" finished-at="2018-05-10T16:24:46Z">
+        </test-method> <!-- tc_MultipleCheckBox_Unchecked -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="afterMethod" is-config="true" duration-ms="298" started-at="2018-05-16T17:25:59Z" finished-at="2018-05-16T17:25:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testRunner.TC_SingleInputField -->
-    </test> <!-- Selenium Easy -->
-  </suite> <!-- Suite1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="beforeMethod" is-config="true" duration-ms="4858" started-at="2018-05-16T17:25:59Z" finished-at="2018-05-16T17:26:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tc_singleCheckBox()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="tc_singleCheckBox" duration-ms="585" started-at="2018-05-16T17:26:04Z" description="Test_For_Single_CheckBox" finished-at="2018-05-16T17:26:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_singleCheckBox -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testRunner.TC_CheckBox1@36d4b5c]" name="afterMethod" is-config="true" duration-ms="276" started-at="2018-05-16T17:26:05Z" finished-at="2018-05-16T17:26:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testRunner.TC_CheckBox1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -6,37 +6,20 @@ import org.openqa.selenium.support.How;
 
 public class SeleniumEasyPractisePage {
 
-	//Elements for Single Input Field
-	//======================================================================
-	@FindBy(how= How.XPATH, using="//*[@id=\"user-message\"]")
+	// Elements for Single Input Field
+	// ======================================================================
+	@FindBy(how = How.XPATH, using = "//*[@id=\"user-message\"]")
 	WebElement enterMessageInput;
-	
-	@FindBy(how= How.XPATH, using="/html/body/div[2]/div/div[2]/div[1]/div[2]/form/button")
+
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/div[1]/div[2]/form/button")
 	WebElement showMessageButton;
-	
-	@FindBy(how= How.XPATH, using="//*[@id=\"display\"]")
+
+	@FindBy(how = How.XPATH, using = "//*[@id=\"display\"]")
 	WebElement messageDisplayField;
-	//======================================================================
-	//Elements for Input Two Fields
-	@FindBy(how= How.XPATH, using="//*[@id=\"sum1\"]")
-	WebElement enterValueAField;
-	
-	
-	@FindBy(how= How.XPATH, using="//*[@id=\"sum2\"]")
-	WebElement enterValueBField;
-	
-	@FindBy(how= How.XPATH, using="/html/body/div[2]/div/div[2]/div[2]/div[2]/form/button")
-	WebElement getTotalButton;
-	
-	
-	@FindBy(how= How.XPATH, using="//*[@id=\"displayvalue\"]")
-	WebElement resultofAddingTwoDisplay;
-	
-	//==========================================================================
-	
-//	Functions for Single Input Field
-//	-----------------------------------------------------------------------------
-	
+
+	// Functions for Single Input Field
+	// -----------------------------------------------------------------------------
+
 	public WebElement getMessageDisplayField() {
 		return messageDisplayField;
 	}
@@ -47,46 +30,60 @@ public class SeleniumEasyPractisePage {
 
 	public void enterMessage(String message) {
 		enterMessageInput.sendKeys(message);
-				
+
 	}
-	
+
 	public void clickShowMessage() {
 		showMessageButton.click();
-		
+
 	}
-	
+
 	public String retrieveTheMessage() {
 		String message = messageDisplayField.getText();
 		return message;
-		
+
 	}
-	
-	//Functions for Double Input Field
-//	-------------------------------------------------------------------------------
+
+	// ======================================================================
+	// Elements for Input Two Fields
+	@FindBy(how = How.XPATH, using = "//*[@id=\"sum1\"]")
+	WebElement enterValueAField;
+
+	@FindBy(how = How.XPATH, using = "//*[@id=\"sum2\"]")
+	WebElement enterValueBField;
+
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/div[2]/div[2]/form/button")
+	WebElement getTotalButton;
+
+	@FindBy(how = How.XPATH, using = "//*[@id=\"displayvalue\"]")
+	WebElement resultofAddingTwoDisplay;
+
+	// ==========================================================================
+
+	// Functions for Double Input Field
+	// -------------------------------------------------------------------------------
 
 	public void enterNumberA(String number) {
 
 		enterValueAField.sendKeys(number);
-		
-		}
-	
+
+	}
+
 	public void enterNumberB(String number) {
 
 		enterValueBField.sendKeys(number);
-		
-		}
-	
+
+	}
+
 	public void clickGetTotal() {
 		getTotalButton.click();
-		
+
 	}
-	
+
 	public String verifyTheTotal() {
-		
+
 		String result = resultofAddingTwoDisplay.getText();
-		
-	
-		
+
 		return result;
 	}
 
@@ -97,9 +94,112 @@ public class SeleniumEasyPractisePage {
 	public void setResultofAddingTwoDisplay(WebElement resultofAddingTwoDisplay) {
 		this.resultofAddingTwoDisplay = resultofAddingTwoDisplay;
 	}
+
+	// Elements for Single CheckBox
+	// =====================================================================
 	
 	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"isAgeSelected\"]")
+	WebElement checkBox;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"txtAge\"]")
+	WebElement checkBoxMessage;
 	
 	
-	
+	// Functions for Single CheckBox
+	// -------------------------------------------------------------------------------
+
+	public void clickCheckBox() {
+		checkBox.click();
+		
 	}
+	
+	
+	public String checkBoxCheckedMessage() {
+		String message = checkBoxMessage.getText(); 
+		
+		if (checkBoxMessage.isDisplayed()) {
+			System.out.println("The message is displayed after clicking checkbox");
+		}
+				
+		return message;
+		
+	}
+
+	public WebElement getCheckBox() {
+		return checkBox;
+	}
+
+	public void setCheckBox(WebElement checkBox) {
+		this.checkBox = checkBox;
+	}
+	
+	
+	
+	// Elements for Multiple CheckBox
+		// =====================================================================
+		
+		
+		@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/div[2]/div[2]/div[1]/label/input")
+		WebElement multiplecheckBox1;
+		
+		@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/div[2]/div[2]/div[1]/label/input")
+		WebElement multiplecheckBox2;
+		
+		@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/div[2]/div[2]/div[3]/label/input")
+		WebElement multipleCheckBox3;
+		
+		@FindBy(how = How.XPATH, using = "/html/body/div[2]/div/div[2]/div[2]/div[2]/div[4]/label/input")
+		WebElement multipleCheckBox4;
+		
+		
+		@FindBy(how = How.XPATH, using = "//*[@id=\"check1\"]")
+		WebElement checkVerificationButton ;
+		
+		
+		
+		// Functions for Multiple CheckBox
+		// -------------------------------------------------------------------------------
+
+		public void clickMultipleCheckBox1() {
+			multiplecheckBox1.click();
+			
+		}
+		
+
+		public void clickMultipleCheckBox2() {
+			multiplecheckBox2.click();
+			
+		}
+
+		public void clickMultipleCheckBox3() {
+			multipleCheckBox3.click();
+			
+		}
+
+		public void clickMultipleCheckBox4() {
+			multipleCheckBox4.click();
+			
+		}
+	
+	
+		
+		public String checkAllButton() { ;
+			checkVerificationButton.click();
+			String textToDeterminedCheckedOrUnchecked = checkVerificationButton.getText();
+			return textToDeterminedCheckedOrUnchecked;
+			
+			
+		}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
