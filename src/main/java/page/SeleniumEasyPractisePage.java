@@ -191,15 +191,51 @@ public class SeleniumEasyPractisePage {
 			
 			
 		}
-		
+	//---------------------------------------------------------------------------------------------	
+	//Elements for Single RadioButton Demo
+	@FindBy(how= How.XPATH, using= "/html/body/div[2]/div/div[1]/div/div[2]/ul/li/ul/li[1]/a")
+	private WebElement radioDemo_inputFormsButton;
+	
+	@FindBy(how= How.XPATH, using= "/html/body/div[2]/div/div[1]/div/div[2]/ul/li/ul/li[1]/ul/li[3]/a")
+	private WebElement radioDemo_radioButtonDemoButton;
+	
+	@FindBy(how= How.XPATH, using= "//*[@id=\"easycont\"]/div/div[2]/div[1]/div[2]/label[1]/input")
+	private WebElement radioDemo_maleRadioButton;
+	
+	@FindBy(how= How.XPATH, using= "//*[@id=\"buttoncheck\"]")
+	private WebElement radioDemo_getCheckedValueButton;
+	
+	@FindBy(how= How.XPATH, using= "//*[@id=\"easycont\"]/div/div[2]/div[1]/div[2]/p[3]")
+	private WebElement radioDemo_RadioMaleButtonIsCheckedText;
+
+
+	
+
+	//---------------------------------------------------------------------------------------------
+	//Getters for Single RadioButton Demo
+	
+	public WebElement getRadioDemo_inputFormsButton() {
+		return radioDemo_inputFormsButton;
+	}
+
+	public WebElement getRadioDemo_radioButtonDemoButton() {
+		return radioDemo_radioButtonDemoButton;
+	}
+
+	public WebElement getRadioDemo_maleRadioButton() {
+		return radioDemo_maleRadioButton;
+	}
+
+	public WebElement getRadioDemo_getCheckedValueButton() {
+		return radioDemo_getCheckedValueButton;
+	}
+
+	public WebElement getRadioDemo_RadioMaleButtonIsCheckedText() {
+		return radioDemo_RadioMaleButtonIsCheckedText;
+	}
+
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 }
