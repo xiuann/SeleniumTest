@@ -20,7 +20,7 @@ public class RadioButton {
 	
 	
 	@Given("^I am on Selenium Easy page$")
-	public void i_am_on_Selenium_Easy_page() throws Throwable {
+	public void i_am_on_Selenium_Easy_page()  {
 	
 		DriverProvider dp = new DriverProvider();
 		driver = dp.chromeDriver();
@@ -31,20 +31,20 @@ public class RadioButton {
 	}
 	
 	@When("^I click Input Forms$")
-	public void i_click_Input_Forms() throws Throwable {
+	public void i_click_Input_Forms()  {
 		sep.getRadioDemo_inputFormsButton().click();
 		
 	  
 	}
 
 	@Then("^I click Radio Buttons Demo$")
-	public void i_click_Radio_Buttons_Demo() throws Throwable {
+	public void i_click_Radio_Buttons_Demo()  {
 		sep.getRadioDemo_radioButtonDemoButton().click();
 	   
 	}
 
 	@Then("^I click Male Button under Radio Button Demo$")
-	public void i_click_Male_Button_under_Radio_Button_Demo() throws Throwable {
+	public void i_click_Male_Button_under_Radio_Button_Demo()  {
 	    
 		sep.getRadioDemo_maleRadioButton().click();
 		
@@ -52,13 +52,13 @@ public class RadioButton {
 	}
 
 	@Then("^I click get checked value$")
-	public void i_click_get_checked_value() throws Throwable {
+	public void i_click_get_checked_value()  {
 		sep.getRadioDemo_getCheckedValueButton().click();
 	  
 	}
 
 	@Then("^I should see Radio button Male is checked$")
-	public void i_should_see_Radio_button_Male_is_checked() throws Throwable {
+	public void i_should_see_Radio_button_Male_is_checked()  {
 		String expected = "Radio button 'Male' is checked";
 		String actual = sep.getRadioDemo_RadioMaleButtonIsCheckedText().getText();
 		

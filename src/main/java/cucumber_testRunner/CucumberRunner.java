@@ -7,10 +7,11 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(
-		features = "src/main/java/feature"
-		,glue={"src/main/java/stepDefinition"}
-		)
+@CucumberOptions(  monochrome = true,
+features = "src/main/java/feature/",
+dryRun = false,
+glue = "stepDefinition" )
+
 
 
 public class CucumberRunner {
