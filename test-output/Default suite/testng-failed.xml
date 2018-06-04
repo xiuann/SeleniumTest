@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testRunner.TC_TwoInputField">
+      <class name="step_definition.SD_RadioButton_MaleOrFemale">
         <methods>
-          <include name="afterMethod"/>
-          <include name="tc_twoInputFields"/>
-          <include name="beforeMethod"/>
+          <include name="i_click_Input_Forms"/>
+          <include name="i_click_get_checked_value"/>
+          <include name="i_click_Male_Button_under_Radio_Button_Demo"/>
+          <include name="i_click_Radio_Buttons_Demo"/>
+          <include name="i_should_see_Radio_button_Male_is_checked"/>
+          <include name="i_am_on_Selenium_Easy_page"/>
         </methods>
-      </class> <!-- testRunner.TC_TwoInputField -->
+      </class> <!-- step_definition.SD_RadioButton_MaleOrFemale -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

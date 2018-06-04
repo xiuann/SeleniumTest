@@ -1,16 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
-<suite name="Suite1" parallel = "classes" >
+<suite name="Suite1" parallel = "tests" >
  
  
- <!-- 
+
   <test name="Regression Testing" >
     <classes>
        <class name="testRunner.SC_ClickingButtonOnHomepage"/>
         <class name="testRunner.SC_ClickingLendingHomeButton"/>
        
     </classes>
-   </test> -->
+    </test>
     
     <test name= "Selenium Easy">
     
@@ -21,14 +21,24 @@
    
    </classes>
     
+  </test>
+    <test name="Cucumber Test">
     
+    <classes>
+    
+    <class name="step_definition.SD_RadioButton_MaleOrFemale"></class>
+    
+    </classes>
+    
+    
+    
+    </test>
     
   
  
     
   
 
-  </test>
  
   
   </suite>
