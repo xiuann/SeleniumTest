@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite1]" parallel="methods">
-  <test name="Regression Testing(failed)" parallel="methods">
+<suite name="Failed suite [Suite1]" parallel="tests">
+  <test name="Selenium Easy(failed)" parallel="tests">
     <classes>
+      <class name="testRunner.SC_ClickingLendingHomeButton">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testRunner.SC_ClickingLendingHomeButton -->
+      <class name="testRunner.FacebookLoginFeature">
+        <methods>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- testRunner.FacebookLoginFeature -->
+      <class name="testRunner.TC_CheckBox1">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testRunner.TC_CheckBox1 -->
+      <class name="testRunner.TC_TwoInputField">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testRunner.TC_TwoInputField -->
       <class name="testRunner.SC_ClickingButtonOnHomepage">
         <methods>
           <include name="afterMethod"/>
-          <include name="tc_clickingLendingButton"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- testRunner.SC_ClickingButtonOnHomepage -->
+      <class name="testRunner.TC_SingleInputField">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testRunner.TC_SingleInputField -->
     </classes>
-  </test> <!-- Regression Testing(failed) -->
+  </test> <!-- Selenium Easy(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

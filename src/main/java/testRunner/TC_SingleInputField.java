@@ -54,17 +54,10 @@ private WebDriver driver;
 		WebDriverWait wait = new WebDriverWait(driver,5);
 		wait.until(ExpectedConditions.elementToBeClickable(sep.getMessageDisplayField()));
 		
-		System.out.println("The message retrieved from the page is " + sep.retrieveTheMessage());
-		
-		
-		
-		
+		String actual = sep.retrieveTheMessage();
+		String expected =  message;
+		assertEquals(actual, expected);
 	
-		System.out.println("Test Passed");
 		
-	
-	
-	
-	
 }
 	}

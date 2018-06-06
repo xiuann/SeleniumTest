@@ -11,7 +11,7 @@ public class DriverProvider {
 	
 	public WebDriver chromeDriver(){
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\bishnu\\Documents\\Jeevan QA Practise Material\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
 		driver = new org.openqa.selenium.chrome.ChromeDriver();		
 		return driver;
 		
