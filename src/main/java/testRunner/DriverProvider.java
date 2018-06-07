@@ -1,18 +1,24 @@
 package testRunner;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverProvider {
 
-	private WebDriver driver;
+	private static WebDriver driver;
 	
 	
 	
 	
-	public WebDriver chromeDriver(){
+	public static WebDriver chromeDriver(){
+		System.out.println("Trying the exe file");
 		
-		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-		driver = new org.openqa.selenium.chrome.ChromeDriver();		
+		System.setProperty("webdriver.chrome.driver", "test/resources/chromedriver_linux.exe");
+		
+		driver = new ChromeDriver();	
+		
+		System.out.println("The driver is working");
+		
 		return driver;
 		
 	}

@@ -1,0 +1,105 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Male Button Check",
+        "description": "",
+        "id": "radio-button;male-button-check",
+        "after": [
+          {
+            "result": {
+              "duration": 60778996,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RadioButton.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3062286954,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on Selenium Easy page",
+            "match": {
+              "location": "RadioButton.i_am_on_Selenium_Easy_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 182525867,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I click Input Forms",
+            "match": {
+              "location": "RadioButton.i_click_Input_Forms()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 203211409,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click Radio Buttons Demo",
+            "match": {
+              "location": "RadioButton.i_click_Radio_Buttons_Demo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 229196138,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click Male Button under Radio Button Demo",
+            "match": {
+              "location": "RadioButton.i_click_Male_Button_under_Radio_Button_Demo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47576024,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click get checked value",
+            "match": {
+              "location": "RadioButton.i_click_get_checked_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 91275389,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see Radio button Male is checked",
+            "match": {
+              "location": "RadioButton.i_should_see_Radio_button_Male_is_checked()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Radio Button",
+    "description": "",
+    "id": "radio-button",
+    "keyword": "Feature",
+    "uri": "radioButton.feature"
+  }
+]
