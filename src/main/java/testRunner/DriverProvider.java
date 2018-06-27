@@ -13,7 +13,7 @@ public class DriverProvider {
 	public static WebDriver chromeDriver(){
 		System.out.println("Trying the exe file");
 		
-		System.setProperty("webdriver.chrome.driver", "test/resources/chromedriver_linux.exe");
+		System.setProperty("webdriver.chrome.driver", "resources/chromedriver_linux.exe");
 		
 		driver = new ChromeDriver();	
 		
