@@ -1,5 +1,8 @@
 package testRunner;
 
+import java.net.URL;
+
+import org.apache.commons.collections4.FactoryUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,6 +15,9 @@ public class DriverProvider {
 	
 	public static WebDriver chromeDriver(){
 		System.out.println("Trying the exe file");
+		
+		
+		
 		
 		System.setProperty("webdriver.chrome.driver", "resources/linuxDriver/chromedriver.exe");
 		

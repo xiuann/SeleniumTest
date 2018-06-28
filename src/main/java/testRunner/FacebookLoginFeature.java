@@ -32,7 +32,7 @@ public class FacebookLoginFeature {
 	@BeforeMethod
 	public void beforeMethod() throws InterruptedException {
 		
-		DriverProvider dp = new DriverProvider();
+		
 		driver = DriverProvider.chromeDriver();
 		driver.navigate().to("http://www.facebook.com");
 						

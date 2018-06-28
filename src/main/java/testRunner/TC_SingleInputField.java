@@ -25,8 +25,8 @@ private WebDriver driver;
 		System.out.println("Running before method");
 		
 		
-		DriverProvider tb = new DriverProvider();
-		driver = tb.chromeDriver();
+
+		driver = DriverProvider.chromeDriver();
 		System.out.println("Opening the browser");
 		driver.navigate().to("http://www.seleniumeasy.com/test/basic-first-form-demo.html");
 

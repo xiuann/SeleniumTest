@@ -22,8 +22,8 @@ public class SC_ClickingButtonOnHomepage {
 		System.out.println("Running before method");
 		
 		
-		DriverProvider tb = new DriverProvider();
-		driver = tb.chromeDriver();
+	
+		driver = DriverProvider.chromeDriver();
 		driver.navigate().to("https://online.citi.com/US/login.do");
 
 		
